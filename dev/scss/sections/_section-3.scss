@@ -1,0 +1,15 @@
+/* =============
+    Section 3
+============= */
+
+#section-3 {
+    display: grid;
+    grid-template-areas: ". section-3 .";
+    padding: 60px 0;
+
+    @include md {
+            display: grid;
+            grid-template-columns: 10% auto 10%;
+            grid-template-areas: ". section-2-last .";
+    }
+}

@@ -1,0 +1,37 @@
+/* =============
+    Section 2
+============= */
+
+#section-2 {
+    @include xl {
+        display: grid;
+        grid-template-areas: ". section-2 .";
+        grid-template-columns: auto 1200px auto;
+    }
+
+    >div {
+        @include lg {
+            display: grid;
+            grid-template-columns: 40% auto;
+        }
+
+        @include xl {
+            grid-area: section-2;
+        }
+
+        aside {
+            background-image: url('../img/section-2/legs.jpg');
+            background-position: right;
+            background-size: cover;
+            height: 380px;
+
+            @include md {
+                height: 476;
+            }
+
+            @include lg {
+                height: auto;
+            }
+        }
+    }
+}

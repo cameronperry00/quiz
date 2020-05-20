@@ -1,9 +1,16 @@
 /* =============
     Section 1
 ============= */
-#section-1{
-    .grid-content{
-        
+#section-1 {
+    display: grid;
+    grid-template-areas: ". section-1 .";
+    padding: 60px 0;
+
+    @include lg {
+        padding: 100px 0;
     }
 
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
 }
